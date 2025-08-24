@@ -13,6 +13,12 @@ const generateToken = (id) => {
 router.post('/register', async (req, res) => {
   try {
     const { name, email, password } = req.body;
+    
+    console.log('Registration attempt:', { name, email }); // Add logging
+
+    if (!name || !email || !password) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
 
     const userExists = await User.findOne({ email });
     if (userExists) {
@@ -29,7 +35,8 @@ router.post('/register', async (req, res) => {
       token: generateToken(user._id)
     });
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    console.error('Registration error:', error); // Better error logging
+    res.status(500).json({ message: error.message });
   }
 });
 

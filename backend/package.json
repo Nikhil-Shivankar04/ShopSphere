@@ -1,5 +1,5 @@
 {
-  "name": "kredo-backend",
+  "name": "shop-sphere-backend",
   "version": "1.0.0",
   "description": "Backend for Online Product Catalogue",
   "main": "server.js",
