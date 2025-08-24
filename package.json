@@ -1,0 +1,12 @@
+{
+  "name": "shop-sphere-fullstack",
+  "version": "1.0.0",
+  "description": "Fullstack deployment package",
+  "scripts": {
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "build:backend": "cd backend && npm install",
+    "build": "npm run build:frontend && npm run build:backend",
+    "start": "cd backend && npm start"
+  },
+  "dependencies": {}
+}
