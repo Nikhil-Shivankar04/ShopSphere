@@ -61,8 +61,7 @@ Built with the **MERN stack** (MongoDB, Express.js, React, Node.js), ShopSphere 
 
 ShopSphere demonstrates **enterprise-level development capabilities** with emphasis on security, performance, scalability, and user experience. The application is fully deployable and serves as a showcase of modern full-stack development expertise.
 
-**Live Demo**: [Your Deployed Link]  
-**GitHub Repository**: [Your GitHub Link]
+**Live Demo**: [[Deployed Link](https://shopsphere-ik8z.onrender.com/) 
 
 ---
 *Built with modern web technologies and best practices*
